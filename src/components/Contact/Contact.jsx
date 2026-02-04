@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaFacebook, FaComments, FaPaperPlane, FaCheck } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaFacebook, FaComments, FaPaperPlane } from 'react-icons/fa';
 import { useForm } from '../../hooks/useForm';
 import { useContactForm } from '../../hooks/useAPI';
 import Image from '../Image';
@@ -8,7 +8,7 @@ import Image from '../Image';
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const { sendMessage, loading: apiLoading, error: apiError, success } = useContactForm();
+  const { sendMessage, isSubmitting: apiSubmitting } = useContactForm();
 
   const initialValues = {
     name: '',
@@ -249,8 +249,8 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${errors.name && touched.name
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-dark-200 dark:border-dark-700'
+                    ? 'border-red-500 focus:ring-red-500'
+                    : 'border-dark-200 dark:border-dark-700'
                     }`}
                   placeholder="Tên của bạn"
                 />
@@ -278,8 +278,8 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${errors.email && touched.email
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-dark-200 dark:border-dark-700'
+                    ? 'border-red-500 focus:ring-red-500'
+                    : 'border-dark-200 dark:border-dark-700'
                     }`}
                   placeholder="your.email@example.com"
                 />
@@ -307,8 +307,8 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${errors.subject && touched.subject
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-dark-200 dark:border-dark-700'
+                    ? 'border-red-500 focus:ring-red-500'
+                    : 'border-dark-200 dark:border-dark-700'
                     }`}
                   placeholder="Chủ đề này về gì?"
                 />
@@ -336,8 +336,8 @@ const Contact = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none ${errors.message && touched.message
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-dark-200 dark:border-dark-700'
+                    ? 'border-red-500 focus:ring-red-500'
+                    : 'border-dark-200 dark:border-dark-700'
                     }`}
                   placeholder="Hãy kể cho tôi về dự án của bạn..."
                 />
@@ -357,8 +357,8 @@ const Contact = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 ${isSubmitting
-                    ? 'bg-primary-300 text-white cursor-not-allowed'
-                    : 'btn-primary'
+                  ? 'bg-primary-300 text-white cursor-not-allowed'
+                  : 'btn-primary'
                   }`}
                 whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.98 } : {}}

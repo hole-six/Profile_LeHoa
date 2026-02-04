@@ -14,7 +14,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-dark-950 transition-colors duration-500">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-dark-950 transition-colors duration-500 pt-28 lg:pt-0">
       {/* Cinematic Background */}
       <CinematicBackground />
 

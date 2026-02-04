@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { 
-  FaReact, 
-  FaJs, 
-  FaHtml5, 
-  FaCss3Alt, 
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
   FaGitAlt,
   FaFigma,
   FaMobile,
@@ -149,11 +149,10 @@ const Skills = () => {
             <motion.button
               key={key}
               onClick={() => setActiveCategory(key)}
-              className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
-                activeCategory === key
+              className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${activeCategory === key
                   ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/25'
                   : 'bg-white dark:bg-dark-800 text-dark-700 dark:text-dark-300 hover:bg-primary-50 dark:hover:bg-dark-700'
-              }`}
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}

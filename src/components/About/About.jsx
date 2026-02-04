@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { FaCode, FaPalette, FaRocket, FaUsers, FaHeart, FaLightbulb } from 'react-icons/fa';
 import Image from '../Image';
@@ -113,11 +113,11 @@ const About = () => {
               animate={isInView ? { scale: 1, opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-            <Image
-              src={profileImg}
-              alt="Lê Hòa"
-              className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
-           />
+              <Image
+                src={profileImg}
+                alt="Lê Hòa"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+              />
               <motion.div
                 className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary-500 rounded-full flex items-center justify-center"
                 animate={{ rotate: 360 }}
@@ -128,8 +128,8 @@ const About = () => {
             </motion.div>
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-dark-900 dark:text-white">
-                  Lê Hòa ! 
-                </h3>
+                Lê Hòa !
+              </h3>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
                 Tôi là Fullstack Developer với hơn 3 năm kinh nghiệm, chuyên nhận code thuê các đồ án web bán hàng, landing page, website thương mại điện tử và hệ thống ERP. Thành thạo nhiều ngôn ngữ lập trình như PHP, Node.js, React.js, Next.js, Vue.js, JavaScript, Python và các công nghệ web hiện đại.
               </p>

@@ -59,10 +59,10 @@ export const useContactForm = () => {
       setLoading(true);
       setError(null);
       setSuccess(false);
-      
+
       await apiService.sendMessage(formData);
       setSuccess(true);
-      
+
       // Reset success message after 3 seconds
       setTimeout(() => setSuccess(false), 3000);
     } catch (err) {

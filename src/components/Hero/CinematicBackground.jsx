@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaRobot, FaRocket, FaSatellite, FaStar } from 'react-icons/fa';
+import { FaRocket, FaSatellite } from 'react-icons/fa';
 
 const CinematicBackground = () => {
     // Random stars generation
