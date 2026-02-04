@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, FaPaperPlane, FaCheck } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaFacebook, FaComments, FaPaperPlane, FaCheck } from 'react-icons/fa';
 import { useForm } from '../../hooks/useForm';
 import { useContactForm } from '../../hooks/useAPI';
 import Image from '../Image';
@@ -71,27 +71,27 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'lehoa.dev@gmail.com',
-      href: 'mailto:lehoa.dev@gmail.com'
+      value: 'hole_six@hiweb.vn',
+      href: 'mailto:hole_six@hiweb.vn'
     },
     {
       icon: FaPhone,
-      title: 'Điện Thoại',
-      value: '+84 123 456 789',
-      href: 'tel:+84123456789'
+      title: 'Điện Thoại / Zalo',
+      value: '0336487534',
+      href: 'tel:0336487534'
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Địa Chỉ',
-      value: 'Hà Nội, Việt Nam',
+      value: 'Việt Nam',
       href: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: FaGithub, href: 'https://github.com/hole-six', label: 'GitHub' },
+    { icon: FaFacebook, href: 'https://www.facebook.com/hoadt122', label: 'Facebook' },
+    { icon: FaComments, href: 'https://zalo.me/0336487534', label: 'Zalo' },
   ];
 
   return (
@@ -157,13 +157,13 @@ const Contact = () => {
                   className="w-full max-w-sm mx-auto rounded-2xl shadow-xl mb-6"
                 />
               </motion.div>
-              
+
               <h3 className="text-2xl font-bold text-dark-900 dark:text-white mb-6">
                 Hãy Kết Nối
               </h3>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed mb-8">
-                Tôi luôn quan tâm đến các cơ hội mới và dự án thú vị. 
-                Dù bạn có câu hỏi hay chỉ muốn chào hỏi, hãy liên hệ với tôi!
+                Chuyên nhận code thuê đồ án web bán hàng, landing page, website thương mại điện tử và các dự án web.
+                Liên hệ ngay để được tư vấn và báo giá chi tiết!
               </p>
             </div>
 
@@ -248,11 +248,10 @@ const Contact = () => {
                   value={values.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${
-                    errors.name && touched.name 
-                      ? 'border-red-500 focus:ring-red-500' 
+                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${errors.name && touched.name
+                      ? 'border-red-500 focus:ring-red-500'
                       : 'border-dark-200 dark:border-dark-700'
-                  }`}
+                    }`}
                   placeholder="Tên của bạn"
                 />
                 {errors.name && touched.name && (
@@ -278,11 +277,10 @@ const Contact = () => {
                   value={values.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${
-                    errors.email && touched.email 
-                      ? 'border-red-500 focus:ring-red-500' 
+                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${errors.email && touched.email
+                      ? 'border-red-500 focus:ring-red-500'
                       : 'border-dark-200 dark:border-dark-700'
-                  }`}
+                    }`}
                   placeholder="your.email@example.com"
                 />
                 {errors.email && touched.email && (
@@ -308,11 +306,10 @@ const Contact = () => {
                   value={values.subject}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${
-                    errors.subject && touched.subject 
-                      ? 'border-red-500 focus:ring-red-500' 
+                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ${errors.subject && touched.subject
+                      ? 'border-red-500 focus:ring-red-500'
                       : 'border-dark-200 dark:border-dark-700'
-                  }`}
+                    }`}
                   placeholder="Chủ đề này về gì?"
                 />
                 {errors.subject && touched.subject && (
@@ -338,11 +335,10 @@ const Contact = () => {
                   value={values.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none ${
-                    errors.message && touched.message 
-                      ? 'border-red-500 focus:ring-red-500' 
+                  className={`w-full px-4 py-3 bg-white dark:bg-dark-800 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 resize-none ${errors.message && touched.message
+                      ? 'border-red-500 focus:ring-red-500'
                       : 'border-dark-200 dark:border-dark-700'
-                  }`}
+                    }`}
                   placeholder="Hãy kể cho tôi về dự án của bạn..."
                 />
                 {errors.message && touched.message && (
@@ -360,11 +356,10 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 ${
-                  isSubmitting
+                className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 ${isSubmitting
                     ? 'bg-primary-300 text-white cursor-not-allowed'
                     : 'btn-primary'
-                }`}
+                  }`}
                 whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.98 } : {}}
               >

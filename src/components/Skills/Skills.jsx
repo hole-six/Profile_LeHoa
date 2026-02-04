@@ -26,37 +26,39 @@ const Skills = () => {
       icon: FaReact,
       skills: [
         { name: 'React.js', level: 95, icon: FaReact, color: 'from-blue-400 to-blue-600' },
-        { name: 'JavaScript', level: 92, icon: FaJs, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'TypeScript', level: 88, icon: FaJs, color: 'from-blue-400 to-blue-600' },
-        { name: 'HTML5', level: 95, icon: FaHtml5, color: 'from-orange-400 to-orange-600' },
-        { name: 'CSS3/Tailwind', level: 93, icon: FaCss3Alt, color: 'from-blue-400 to-blue-600' },
-        { name: 'Responsive Design', level: 90, icon: FaMobile, color: 'from-green-400 to-green-600' },
-        { name: 'Next.js', level: 85, icon: FaReact, color: 'from-gray-400 to-gray-600' },
-        { name: 'Vue.js', level: 80, icon: FaJs, color: 'from-green-400 to-green-600' },
+        { name: 'Next.js', level: 90, icon: FaReact, color: 'from-gray-700 to-gray-900' },
+        { name: 'Vue.js', level: 88, icon: FaJs, color: 'from-green-400 to-green-600' },
+        { name: 'JavaScript/ES6+', level: 95, icon: FaJs, color: 'from-yellow-400 to-yellow-600' },
+        { name: 'TypeScript', level: 85, icon: FaJs, color: 'from-blue-500 to-blue-700' },
+        { name: 'HTML5/CSS3', level: 98, icon: FaHtml5, color: 'from-orange-400 to-orange-600' },
+        { name: 'Tailwind CSS', level: 95, icon: FaCss3Alt, color: 'from-cyan-400 to-cyan-600' },
+        { name: 'Bootstrap', level: 90, icon: FaCss3Alt, color: 'from-purple-400 to-purple-600' },
+      ]
+    },
+    backend: {
+      title: 'Backend Development',
+      icon: FaCode,
+      skills: [
+        { name: 'PHP/Laravel', level: 92, icon: FaCode, color: 'from-indigo-400 to-indigo-600' },
+        { name: 'Node.js/Express', level: 90, icon: FaCode, color: 'from-green-500 to-green-700' },
+        { name: 'Python/Django', level: 85, icon: FaCode, color: 'from-blue-400 to-blue-600' },
+        { name: 'MySQL/PostgreSQL', level: 88, icon: FaCode, color: 'from-orange-400 to-orange-600' },
+        { name: 'MongoDB', level: 85, icon: FaCode, color: 'from-green-400 to-green-600' },
+        { name: 'RESTful API', level: 93, icon: FaCode, color: 'from-purple-400 to-purple-600' },
+        { name: 'GraphQL', level: 80, icon: FaCode, color: 'from-pink-400 to-pink-600' },
+        { name: 'Firebase', level: 87, icon: FaCode, color: 'from-yellow-400 to-yellow-600' },
       ]
     },
     tools: {
-      title: 'Công Cụ & Framework',
+      title: 'Công Cụ & DevOps',
       icon: FaGitAlt,
       skills: [
-        { name: 'Git & GitHub', level: 90, icon: FaGitAlt, color: 'from-gray-400 to-gray-600' },
-        { name: 'Webpack', level: 85, icon: FaCode, color: 'from-blue-400 to-blue-600' },
-        { name: 'Figma', level: 88, icon: FaFigma, color: 'from-pink-400 to-pink-600' },
-        { name: 'VS Code', level: 95, icon: FaCode, color: 'from-blue-400 to-blue-600' },
-        { name: 'Chrome DevTools', level: 90, icon: FaCode, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'Testing (Jest)', level: 85, icon: FaJs, color: 'from-purple-400 to-purple-600' },
-      ]
-    },
-    design: {
-      title: 'UI/UX Design',
-      icon: FaPalette,
-      skills: [
-        { name: 'UI Design', level: 88, icon: FaPalette, color: 'from-pink-400 to-pink-600' },
-        { name: 'UX Research', level: 85, icon: FaUsers, color: 'from-blue-400 to-blue-600' },
-        { name: 'Prototyping', level: 90, icon: FaMobile, color: 'from-green-400 to-green-600' },
-        { name: 'Design Systems', level: 87, icon: FaPalette, color: 'from-purple-400 to-purple-600' },
-        { name: 'Accessibility', level: 85, icon: FaUsers, color: 'from-orange-400 to-orange-600' },
-        { name: 'Animation (Framer)', level: 82, icon: FaRocket, color: 'from-red-400 to-red-600' },
+        { name: 'Git & GitHub', level: 95, icon: FaGitAlt, color: 'from-gray-600 to-gray-800' },
+        { name: 'Docker', level: 82, icon: FaCode, color: 'from-blue-400 to-blue-600' },
+        { name: 'Linux/Ubuntu', level: 85, icon: FaCode, color: 'from-orange-400 to-orange-600' },
+        { name: 'Nginx/Apache', level: 88, icon: FaCode, color: 'from-green-400 to-green-600' },
+        { name: 'Webpack/Vite', level: 87, icon: FaCode, color: 'from-blue-400 to-blue-600' },
+        { name: 'Figma/Photoshop', level: 85, icon: FaFigma, color: 'from-pink-400 to-pink-600' },
       ]
     }
   };
@@ -206,14 +208,14 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Giải Quyết Vấn Đề',
-              'Làm Việc Nhóm',
-              'Quản Lý Dự Án',
-              'Agile/Scrum',
-              'Code Review',
-              'Mentoring',
-              'Viết Tài Liệu Kỹ Thuật',
-              'UI/UX Design'
+              'Web Bán Hàng',
+              'Landing Page',
+              'ERP System',
+              'Thương Mại Điện Tử',
+              'Payment Gateway',
+              'SEO Optimization',
+              'Responsive Design',
+              'API Integration'
             ].map((skill, index) => (
               <motion.span
                 key={skill}

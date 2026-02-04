@@ -19,7 +19,7 @@ const Typewriter = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const current = texts[textIndex];
-      
+
       if (!isDeleting) {
         if (currentIndex < current.length) {
           setCurrentText(current.substring(0, currentIndex + 1));
@@ -43,16 +43,16 @@ const Typewriter = () => {
 
   return (
     <motion.span
-      className="block text-primary-600 dark:text-primary-400 font-medium"
+      className="inline-block"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 1 }}
+      transition={{ delay: 0.5 }}
     >
       {currentText}
       <motion.span
-        className="text-primary-500"
-        animate={{ opacity: [1, 0, 1] }}
-        transition={{ duration: 1, repeat: Infinity }}
+        className="text-primary-500 ml-1"
+        animate={{ opacity: [1, 0] }}
+        transition={{ duration: 0.8, repeat: Infinity }}
       >
         |
       </motion.span>

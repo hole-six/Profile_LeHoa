@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaFacebook, FaComments, FaEnvelope } from 'react-icons/fa';
 import ThemeToggle from '../ThemeToggle';
 
 const Header = () => {
@@ -17,10 +17,10 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/lehoa1206', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: FaEnvelope, href: 'mailto:your@email.com', label: 'Email' },
+    { icon: FaGithub, href: 'https://github.com/hole-six', label: 'GitHub' },
+    { icon: FaFacebook, href: 'https://www.facebook.com/hoadt122', label: 'Facebook' },
+    { icon: FaComments, href: 'https://zalo.me/0336487534', label: 'Zalo' },
+    { icon: FaEnvelope, href: 'mailto:hole_six@hiweb.vn', label: 'Email' },
   ];
 
   useEffect(() => {
@@ -41,11 +41,10 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'glass-effect shadow-lg' 
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'glass-effect shadow-lg'
+        : 'bg-transparent'
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
@@ -57,7 +56,7 @@ const Header = () => {
             className="text-2xl font-bold gradient-text"
             whileHover={{ scale: 1.05 }}
           >
-            Lê Hòa
+            hole_six
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -133,7 +132,7 @@ const Header = () => {
                     {item.name}
                   </motion.button>
                 ))}
-                
+
                 <div className="flex items-center justify-between pt-4 border-t border-white/20 dark:border-dark-700/20">
                   <div className="flex space-x-4">
                     {socialLinks.map((social, index) => (

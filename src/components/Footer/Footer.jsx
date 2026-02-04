@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaCode } from 'react-icons/fa';
+import { FaGithub, FaFacebook, FaComments, FaHeart, FaCode, FaStore } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: FaGithub, href: 'https://github.com/hole_six', label: 'GitHub' },
+    { icon: FaFacebook, href: 'https://www.facebook.com/hoadt122', label: 'Facebook' },
+    { icon: FaStore, href: 'https://www.facebook.com/profile.php?id=61585720092760', label: 'Fanpage' },
+    { icon: FaComments, href: 'https://zalo.me/0336487534', label: 'Zalo' },
   ];
 
   const quickLinks = [
@@ -58,8 +59,8 @@ const Footer = () => {
                   Lê Hòa
                 </h3>
                 <p className="text-dark-300 leading-relaxed max-w-md">
-                  Một Frontend Developer đam mê tạo ra những trải nghiệm web đẹp mắt, chức năng 
-                  và thân thiện với người dùng. Hãy cùng xây dựng điều gì đó tuyệt vời!
+                  Fullstack Developer chuyên nhận code thuê đồ án web bán hàng, landing page và các dự án web.
+                  Liên hệ ngay để được tư vấn và báo giá!
                 </p>
               </motion.div>
 
@@ -137,13 +138,13 @@ const Footer = () => {
                 viewport={{ once: true }}
               >
                 <p className="text-dark-300">
-                  lehoa.dev@gmail.com
+                  hole_six@hiweb.vn
                 </p>
                 <p className="text-dark-300">
-                  +84 123 456 789
+                  0336487534 (Zalo)
                 </p>
                 <p className="text-dark-300">
-                  Hà Nội, Việt Nam
+                  Việt Nam
                 </p>
               </motion.div>
             </div>

@@ -131,10 +131,10 @@ const About = () => {
                   Lê Hòa ! 
                 </h3>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-                Tôi là một lập trình viên full-stack đầy nhiệt huyết với hơn 3 năm kinh nghiệm trong việc tạo ra các giải pháp kỹ thuật số tạo nên sự khác biệt. Tôi chuyên về các công nghệ web hiện đại và yêu thích việc biến những vấn đề phức tạp thành những thiết kế đơn giản, đẹp mắt và trực quan.
+                Tôi là Fullstack Developer với hơn 3 năm kinh nghiệm, chuyên nhận code thuê các đồ án web bán hàng, landing page, website thương mại điện tử và hệ thống ERP. Thành thạo nhiều ngôn ngữ lập trình như PHP, Node.js, React.js, Next.js, Vue.js, JavaScript, Python và các công nghệ web hiện đại.
               </p>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-               Khi không viết code, bạn có thể thấy tôi đang khám phá các công nghệ mới, đóng góp vào các dự án nguồn mở hoặc chia sẻ kiến ​​thức của mình với cộng đồng nhà phát triển. Tôi tin vào việc học hỏi liên tục và cập nhật các xu hướng mới nhất trong phát triển web.
+                Đã triển khai thành công nhiều dự án lớn nhỏ như wavestore.id.vn (cửa hàng bán đồ full chức năng), websitegiare.netlify.app (nền tảng template và thông tin) cùng vô vàn các dự án web bán hàng, ERP và landing page khác. Tôi cam kết mang đến giải pháp tối ưu, code chất lượng cao và hỗ trợ tận tình cho mọi dự án.
               </p>
             </div>
 
