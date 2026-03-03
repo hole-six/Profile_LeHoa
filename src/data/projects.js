@@ -18,7 +18,7 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1596462502278-27bfdd403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
     technologies: ['React', 'Redux', 'Tailwind CSS', 'Node.js', 'Payment Gateway'],
     category: 'Thương Mại Điện Tử',
-    github: 'https://github.com/hole_six',
+    github: 'https://github.com/hole-six',
     live: 'https://beauty-storevn.netlify.app/',
     featured: true,
     color: 'from-pink-400 to-rose-600'
@@ -30,7 +30,7 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
     technologies: ['PHP', 'Laravel', 'MySQL', 'Vue.js', 'System Architecture'],
     category: 'Hệ Thống Phức Tạp',
-    github: 'https://github.com/hole_six',
+    github: 'https://github.com/hole-six',
     live: 'http://wavestore.id.vn/',
     featured: true,
     color: 'from-blue-400 to-blue-600'
@@ -42,10 +42,22 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
     technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
     category: 'Web App',
-    github: 'https://github.com/hole_six',
+    github: 'https://github.com/hole-six',
     live: 'https://websitegiare.netlify.app/',
     featured: true,
     color: 'from-violet-400 to-purple-600'
+  },
+  {
+    id: 4,
+    title: 'Rượu Jagermeister Vũng Tàu - Landing Page Bán Rượu',
+    description: 'Landing page bán rượu chuyên nghiệp với thiết kế nhanh gọn, responsive hoàn hảo trên mọi thiết bị. Tích hợp đầy đủ chức năng giỏ hàng, thanh toán và quản lý đơn hàng. Giao diện tối ưu cho trải nghiệm mua sắm nhanh chóng.',
+    image: 'https://images.unsplash.com/photo-1569529465841-dfecdab7503b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Responsive Design', 'Payment Integration'],
+    category: 'Landing Page',
+    github: 'https://github.com/hole-six',
+    live: 'https://ruoujagermaistervungtau.onrender.com/',
+    featured: true,
+    color: 'from-amber-500 to-orange-700'
   }
 ];
 

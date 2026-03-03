@@ -164,7 +164,7 @@ const Projects = () => {
           viewport={{ once: true }}
         >
           <a
-            href="https://github.com/hole_six"
+            href="https://github.com/hole-six"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-dark-600 dark:text-dark-400 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
