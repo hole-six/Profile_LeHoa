@@ -58,7 +58,7 @@ const IntroOverlay = ({ onComplete }) => {
                 style={{ left: '50%', height: '50%' }}
                 initial={{ height: 0 }}
                 animate={{
-                    height: step === 'start' ? 0 : (step === 'exit' ? 0 : '45%')
+                    height: step === 'start' ? 0 : (step === 'exit' ? 0 : '35%')
                 }}
                 transition={{
                     type: "spring",
@@ -73,7 +73,7 @@ const IntroOverlay = ({ onComplete }) => {
                 className="absolute left-1/2 -translate-x-1/2"
                 initial={{ top: '-10%' }}
                 animate={{
-                    top: step === 'start' ? '-10%' : (step === 'exit' ? '-20%' : '45%')
+                    top: step === 'start' ? '-10%' : (step === 'exit' ? '-20%' : '35%')
                 }}
                 transition={{
                     type: "spring",
@@ -85,7 +85,7 @@ const IntroOverlay = ({ onComplete }) => {
                 <div className="relative">
                     {/* Glowing Body */}
                     <div className="relative z-10 text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
-                        <FaSpider size={80} />
+                        <FaSpider className="text-[50px] sm:text-[70px] md:text-[80px]" />
                     </div>
                     {/* Red Eyes */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex justify-center items-center gap-2 z-20 pt-2">
@@ -99,16 +99,16 @@ const IntroOverlay = ({ onComplete }) => {
             <AnimatePresence>
                 {(step === 'text' || step === 'thunder') && (
                     <motion.div
-                        className="absolute top-[60%] left-1/2 -translate-x-1/2 text-center"
+                        className="absolute top-[60%] sm:top-[62%] left-0 right-0 text-center px-2"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 2, filter: 'blur(10px)' }}
                     >
-                        <h1 className="text-6xl md:text-8xl font-black text-white glitch-text" data-text="HOLE_SIX">
+                        <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white glitch-text" data-text="HOLE_SIX">
                             HOLE_SIX
                         </h1>
                         <motion.p
-                            className="text-cyan-400 mt-4 text-xl tracking-[0.5em] font-mono"
+                            className="text-cyan-400 mt-2 sm:mt-4 text-[10px] sm:text-base md:text-lg lg:text-xl tracking-[0.1em] sm:tracking-[0.3em] md:tracking-[0.5em] font-mono"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5 }}

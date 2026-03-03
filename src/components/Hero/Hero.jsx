@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaDownload, FaEye } from 'react-icons/fa';
 import Typewriter from './Typewriter';
 import CinematicBackground from './CinematicBackground';
+import CVViewer from '../CVViewer';
 import { images } from '../../assets/images';
 
 const Hero = () => {
+  const [isCVOpen, setIsCVOpen] = useState(false);
+
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/hole_six', label: 'GitHub' },
     { icon: FaFacebook, href: 'https://www.facebook.com/hoadt122', label: 'Facebook' },
@@ -70,7 +73,18 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="/resume.pdf" className="btn-secondary inline-flex items-center justify-center gap-2">
+            <button 
+              onClick={() => setIsCVOpen(true)}
+              className="btn-secondary inline-flex items-center justify-center gap-2"
+            >
+              <FaEye className="text-sm" />
+              Xem CV
+            </button>
+            <a 
+              href="/Infomation.pdf" 
+              download="CV_LeHoa.pdf"
+              className="btn-secondary inline-flex items-center justify-center gap-2"
+            >
               <FaDownload className="text-sm" />
               Tải CV
             </a>
@@ -124,6 +138,9 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* CV Viewer Modal */}
+      <CVViewer isOpen={isCVOpen} onClose={() => setIsCVOpen(false)} />
     </section>
   );
 };
