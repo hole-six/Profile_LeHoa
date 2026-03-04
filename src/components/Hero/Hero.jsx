@@ -73,16 +73,16 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <button 
+            <button
               onClick={() => setIsCVOpen(true)}
               className="btn-secondary inline-flex items-center justify-center gap-2"
             >
               <FaEye className="text-sm" />
               Xem CV
             </button>
-            <a 
-              href="/Infomation.pdf" 
-              download="CV_LeHoa.pdf"
+            <a
+              href="/CV_LeHoa_2026.pdf"
+              download="CV_LeHoa_2026.pdf"
               className="btn-secondary inline-flex items-center justify-center gap-2"
             >
               <FaDownload className="text-sm" />
