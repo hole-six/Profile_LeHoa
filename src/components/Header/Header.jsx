@@ -12,6 +12,7 @@ const Header = () => {
     { name: 'Về Tôi', href: '#about' },
     { name: 'Kỹ Năng', href: '#skills' },
     { name: 'Dự Án', href: '#projects' },
+    { name: 'Blog', href: '#blogs' },
     { name: 'Thư Viện', href: '#gallery' },
     { name: 'Liên Hệ', href: '#contact' },
   ];
